@@ -38,6 +38,9 @@ class NumberStuff:
         return self.numbers
 
     def print_numbers(self):
+        """
+        Calls all functions and prints results
+        """
         print("[+] ORIGINAL NUMBERS: ", self.numbers)
         print("[+] EVEN NUMBERS: ", self.get_even())
         print("[+] ODD NUMBERS: ", self.get_odd())
