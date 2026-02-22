@@ -1,6 +1,11 @@
 class NumberStuff:
     """
     Perform basic operations on numbers
+
+    Follows KISS, YAGNI, and DRY principles
+    KISS: Each method does one thing
+    YAGNI: Only includes the bare minimum needed to complete operations
+    DRY: Avoids repeating the same code / operations
     """
 
     def __init__(self, numbers=None):
