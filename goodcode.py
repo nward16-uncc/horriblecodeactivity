@@ -46,13 +46,21 @@ class NumberStuff:
         """
         Calls all functions and prints results
         """
+        print("+------------------------------------+")
         print("[+] ORIGINAL NUMBERS: ", self.numbers)
         print("[+] EVEN NUMBERS: ", self.get_even())
         print("[+] ODD NUMBERS: ", self.get_odd())
         print("[+] AVERAGE: ", self.get_average())
         print("[+] SWITCHED NUMBERS: ", self.switch_numbers())
+        print("+------------------------------------+\n")
 
 
 if __name__ == "__main__":
     number_stuff = NumberStuff()
     number_stuff.print_numbers()
+
+    second_number_stuff = NumberStuff([4, 8, 16, 32, 64])
+    second_number_stuff.print_numbers()
+
+    third_number_stuff = NumberStuff([3, 5, 7, 9, 11])
+    third_number_stuff.print_numbers()
