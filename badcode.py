@@ -126,3 +126,21 @@ if __name__ == "__main__":
 
     third_number_stuff = NumberStuff([3, 5, 7, 9, 11])
     third_number_stuff.print_numbers()
+
+
+    
+"""
+DRY — get_even and get_odd both contain the exact same loop logic that separates 
+even/odd and computes totals, when only one return value differs. print_numbers 
+also manually re-implements the average and switch logic instead of calling the 
+existing methods.
+
+KISS — get_even, get_odd, and get_average all do extra unnecessary work 
+(tracking counts, min/max, totals for both categories) beyond their 
+single stated purpose. print_numbers manually reverses the switch to restore 
+state rather than using a simpler approach.
+
+YAGNI — The constructor initializes backup_numbers, even_count, odd_count, 
+last_operation, operation_history, and metadata, none of which are ever 
+meaningfully used anywhere in the program.
+"""
