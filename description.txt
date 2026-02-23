@@ -12,3 +12,17 @@ state rather than using a simpler approach.
 YAGNI — The constructor initializes backup_numbers, even_count, odd_count, 
 last_operation, operation_history, and metadata, none of which are ever 
 meaningfully used anywhere in the program.
+
+Good Code:
+DRY — stored numbers once in self.numbers and reused that list across all methods.
+Each method performs a single task without reusing logic. Avoided reusing logic
+by utilizing lists.
+
+KISS — methods are all clean and focused on one task. get_even() and get_odd()
+use simple lists instead of separate variables for each element or an array.
+No unnecessary complication with switch_numbers(), uses one line to switch first
+and last element at the same time.
+
+YAGNI — no extra attributes for methods or the class. The class only contains
+methods relevant to number operations, the class is only initialized with a
+simple number list in the constructor.
